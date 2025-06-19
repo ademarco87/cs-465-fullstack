@@ -1,9 +1,17 @@
-<!-- <pre>{{trips | json}}</pre> -->
- <div>
-  <button (click)="addTrip()" class="btn btn-info">Add Trip</button>
- </div>
-<div class="row">
-  <div *ngFor="let trip of trips" class="col-md-4">
-    <app-trip-card [trip]="trip"></app-trip-card>
+<!-- trip-listing.component.html -->
+
+<ng-container *ngIf="isLoggedIn(); else loginPrompt">
+  <div>
+    <button (click)="addTrip()" class="btn btn-info">Add Trip</button>
   </div>
-</div>
+
+  <div class="row mt-3">
+    <div *ngFor="let trip of trips" class="col-md-4">
+      <app-trip-card [trip]="trip"></app-trip-card>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #loginPrompt>
+  <p class="mt-5">Please login to continue</p>
+</ng-template>

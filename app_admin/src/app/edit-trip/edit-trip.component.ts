@@ -61,22 +61,31 @@ export class EditTripComponent implements OnInit {
       });
   }
 
-  public onSubmit() {
+    public onSubmit() {
     this.submitted = true;
-    if (this.editForm.valid) {
-      this.tripDataService.updateTrip(this.editForm.value)
-        .subscribe({
-          next: (value: any) => {
-            console.log('Trip updated:', value);
-            this.router.navigate(['']);
-          },
-          error: (error: any) => {
-            console.log('Update error:', error);
-          }
-        });
+
+    console.log('Form submit triggered'); // ✅ Debug
+
+    if (this.editForm.invalid) {
+      console.warn('Form is invalid:', this.editForm); // ✅ Debug
+      return;
     }
+
+    // Optional: Merge with original trip to support partial edits
+    const updatedTrip = { ...this.trip, ...this.editForm.value };
+
+    this.tripDataService.updateTrip(updatedTrip).subscribe({
+      next: (value: any) => {
+        console.log('Trip updated:', value);
+        this.router.navigate(['']);
+      },
+      error: (error: any) => {
+        console.log('Update error:', error);
+      }
+    });
   }
 
-  // shortcut for easy access to form controls
-  get f() { return this.editForm.controls; }
+  get f() {
+    return this.editForm.controls;
+  }
 }
