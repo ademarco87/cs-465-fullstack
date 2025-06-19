@@ -58,7 +58,7 @@ Custom middleware for secure route protection
 
 MongoDB Atlas (Cloud-hosted NoSQL database)
 
-Dev Tools & Workflow
+**Dev Tools & Workflow**
 
 Visual Studio Code
 
