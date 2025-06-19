@@ -27,7 +27,7 @@ Enabled trip editing feature. Populated the form dynamically with fetched trip d
 ## Module 7 - Week 7
 Added authentication service and protected routes. Integrated JWT for secure access. Finalized trip update logic.
 
-
+## TECH STACK
 Frontend (Admin SPA)
 
 Angular 16 (Standalone components)
