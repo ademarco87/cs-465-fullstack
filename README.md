@@ -1,83 +1,101 @@
-# cs-465-fullstack
-CS-465 Full stack development with MEAN
+# 🌍 Travlr Getaways - Development Log  
+_A full-stack travel management app built in CS-465 with the MEAN stack_
 
+---
 
-# Travlr Getaways - Weekly Development Log
+## 🗂 Course: CS-465 Full Stack Development
 
-This README documents weekly progress for each module of the CS 465 Full Stack Development course.
+This README documents weekly progress and technology stack used during the development of the Travlr Getaways project.
 
-## Module 1 - Week 1
-Initialized the project with a basic setup and explored full stack concepts. Started planning the Travlr Getaways application.
+---
 
-## Module 2 - Week 2
-Refactored the project using the MVC architecture and Handlebars templating system. Implemented dynamic content rendering.
+## 📅 Weekly Development Log
 
-## Module 3 - Week 3
-Added Angular to the project for admin SPA. Created Angular components, routes, and services.
+### ✅ Module 1 – Week 1: Project Setup
+- Initialized the project structure
+- Explored full stack development concepts
+- Started planning the **Travlr Getaways** application
 
-## Module 4 - Week 4
-Integrated Angular forms and validation. Developed components for adding and displaying trip data.
+### 🔧 Module 2 – Week 2: MVC Architecture + Templating
+- Refactored backend using **MVC architecture**
+- Implemented **Handlebars (HBS)** for server-side templating
+- Enabled dynamic content rendering
 
-## Module 5 - Week 5
-Added trip listing and trip card components. Implemented data service communication between Angular and Express APIs.
+### 🚀 Module 3 – Week 3: Angular Integration
+- Added **Angular** for the admin-side Single Page Application (SPA)
+- Created components, routes, and services
 
-## Module 6 - Week 6
-Enabled trip editing feature. Populated the form dynamically with fetched trip data. Implemented partial data merging and improved validation.
+### 📝 Module 4 – Week 4: Forms + Validation
+- Integrated **Angular forms** with validation logic
+- Built components for adding and displaying trips
 
-## Module 7 - Week 7
-Added authentication service and protected routes. Integrated JWT for secure access. Finalized trip update logic.
+### 🧩 Module 5 – Week 5: Trip Display Features
+- Added **Trip List** and **Trip Card** components
+- Enabled backend communication via Angular services
 
-## TECH STACK
-**Frontend (Admin SPA)**
+### ✏️ Module 6 – Week 6: Trip Editing
+- Developed **Edit Trip** feature with dynamic form population
+- Implemented data merging, improved validations
 
-Angular 16 (Standalone components)
+### 🔐 Module 7 – Week 7: Authentication
+- Integrated **JWT Authentication**
+- Created protected routes for admins
+- Finalized trip update functionality
 
-TypeScript
+---
 
-Bootstrap 5
+## 🧰 Tech Stack
 
-Reactive Forms / Template-driven Forms
+### 👨‍💻 Frontend (Admin SPA)
+- Angular 16 (Standalone components)
+- TypeScript
+- Bootstrap 5
+- Reactive Forms / Template-driven Forms
+- Angular Router
 
-Angular Router
+### 🌐 Backend (REST API)
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- JSON Web Tokens (JWT)
+- Passport.js
+- Custom Middleware
 
-**Backend (API)**
+### 🗄️ Database
+- MongoDB Atlas (Cloud-hosted NoSQL)
 
-Node.js
+### 🛠 Development Tools
+- Visual Studio Code
+- Postman (API testing)
+- Git + GitHub
+- ESLint
+- nodemon (backend live reload)
+- Angular CLI (frontend live server)
 
-Express.js
+### 🔒 Security
+- JWT-based authentication
+- Bcrypt for password hashing
+- `.env` for environment config (ignored in version control)
+- HTTPS-ready architecture
 
-MongoDB with Mongoose ODM
+---
 
-JSON Web Tokens (JWT) for Authentication
+## 📌 Notes
+- Admin SPA is Angular-powered.
+- Customer-facing pages use Express and Handlebars.
+- Project structured with maintainability and scalability in mind.
 
-Passport.js for middleware-based authentication
+---
 
-Custom middleware for secure route protection
+## 📸 (Optional) Screenshots or Demo Links
+> _Include a screenshot of the UI, API response in Postman, or a deployed demo link here._
 
-**Database**
+---
 
-MongoDB Atlas (Cloud-hosted NoSQL database)
+## 📎 (Optional) Useful Commands
+```bash
+# Start backend server
+npm run dev
 
-**Dev Tools & Workflow**
-
-Visual Studio Code
-
-Postman for API testing
-
-Git + GitHub
-
-ESLint
-
-nodemon for live backend reload
-
-Angular CLI & Live Development Server
-
-**Security**
-
-JWT Auth for token-based access
-
-Bcrypt for password hashing
-
-HTTPS-ready structure
-
-Environment-based configuration using .env (ignored via .gitignore)
+# Start Angular frontend
+ng serve
