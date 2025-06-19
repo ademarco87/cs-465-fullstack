@@ -26,3 +26,58 @@ Enabled trip editing feature. Populated the form dynamically with fetched trip d
 
 ## Module 7 - Week 7
 Added authentication service and protected routes. Integrated JWT for secure access. Finalized trip update logic.
+
+
+Frontend (Admin SPA)
+
+Angular 16 (Standalone components)
+
+TypeScript
+
+Bootstrap 5
+
+Reactive Forms / Template-driven Forms
+
+Angular Router
+
+Backend (API)
+
+Node.js
+
+Express.js
+
+MongoDB with Mongoose ODM
+
+JSON Web Tokens (JWT) for Authentication
+
+Passport.js for middleware-based authentication
+
+Custom middleware for secure route protection
+
+Database
+
+MongoDB Atlas (Cloud-hosted NoSQL database)
+
+Dev Tools & Workflow
+
+Visual Studio Code
+
+Postman for API testing
+
+Git + GitHub
+
+ESLint
+
+nodemon for live backend reload
+
+Angular CLI & Live Development Server
+
+Security
+
+JWT Auth for token-based access
+
+Bcrypt for password hashing
+
+HTTPS-ready structure
+
+Environment-based configuration using .env (ignored via .gitignore)
