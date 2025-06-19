@@ -28,7 +28,7 @@ Enabled trip editing feature. Populated the form dynamically with fetched trip d
 Added authentication service and protected routes. Integrated JWT for secure access. Finalized trip update logic.
 
 ## TECH STACK
-Frontend (Admin SPA)
+**Frontend (Admin SPA)**
 
 Angular 16 (Standalone components)
 
@@ -40,7 +40,7 @@ Reactive Forms / Template-driven Forms
 
 Angular Router
 
-Backend (API)
+**Backend (API)**
 
 Node.js
 
@@ -54,7 +54,7 @@ Passport.js for middleware-based authentication
 
 Custom middleware for secure route protection
 
-Database
+**Database**
 
 MongoDB Atlas (Cloud-hosted NoSQL database)
 
@@ -72,7 +72,7 @@ nodemon for live backend reload
 
 Angular CLI & Live Development Server
 
-Security
+**Security**
 
 JWT Auth for token-based access
 
