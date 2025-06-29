@@ -1,22 +1,41 @@
-🏛 Architecture
-In building the Travlr Getaways full stack web application, I utilized both server-side rendering and client-side single-page architecture. The customer-facing interface was rendered using Express and Handlebars (HBS) for templated HTML, while the administrative dashboard was developed as a Single Page Application (SPA) using Angular. Express and Handlebars enabled efficient server-side rendering of static content, while Angular provided a dynamic and responsive admin experience with real-time data updates and route navigation.
+# 
+## 🏛 Architecture
+The Travlr Getaways full stack web application combines both server-side and client-side rendering to deliver a modern, responsive experience.
 
-The backend used MongoDB, a NoSQL document database that offers flexible and scalable storage for user and trip data. This choice was ideal for an application that handles loosely structured data without rigid schemas. MongoDB also integrates seamlessly with Node.js and Express, making data manipulation fast and developer-friendly.
+The customer-facing interface was built using Express.js and Handlebars (HBS) to generate dynamic HTML on the server.
 
-⚙️ Functionality
-JSON (JavaScript Object Notation) differs from JavaScript in that it's a lightweight data format used for exchanging data, not a programming language. In this project, JSON served as the bridge between the frontend and backend. Angular services requested data via HTTP methods, received JSON responses from the RESTful API, and rendered them into UI components on the admin dashboard.
+The admin dashboard was implemented as a Single Page Application (SPA) using Angular, offering a smooth, interactive experience for managing trips.
 
-To improve functionality and efficiency, I consistently refactored code throughout the project. For example, I modularized reusable UI components such as trip cards and input forms in Angular. This not only reduced code duplication but made it easier to maintain and extend the app. Such practices align with modern development standards and support scalable, production-ready applications.
+The backend uses MongoDB, a flexible NoSQL document database that’s ideal for handling loosely structured data like trip and user details. This allowed for faster development without rigid schemas. MongoDB integrates seamlessly with Node.js and Express, simplifying data modeling through Mongoose and enabling efficient CRUD operations.
 
-🔍 Testing
-In a full stack system, the backend must support multiple HTTP methods—GET, POST, PUT, and DELETE—each of which was implemented and tested throughout the development process. I used Postman to test REST API endpoints and verify correct server responses.
+## ⚙️ Functionality
+JSON (JavaScript Object Notation) is not a programming language like JavaScript—it’s a lightweight, language-independent format used to structure data for transmission. In this project:
 
-A key challenge emerged after implementing JWT-based login authentication for admins. Testing protected endpoints required simulating authorized access by passing valid tokens in headers. This helped solidify my understanding of how authentication and authorization work in secure applications. It also gave me deeper insight into how layered security is tested and verified in professional-grade deployments.
+JSON served as the data bridge between frontend and backend.
 
-🎯 Reflection
-This course has served as a culmination of everything I’ve learned so far in the Computer Science program. It challenged me to design, build, secure, and maintain a complete full stack application from scratch—something I had never done at this scale before. From frontend development and backend architecture to database integration and authentication, every piece had to work together. I also learned to debug complex, multi-layered issues across the stack using real-world tools and workflows.
+Angular sent and received JSON payloads via RESTful API requests to/from the Express backend.
 
-This experience has significantly boosted my confidence and made me a more well-rounded developer. As I transition from emergency medicine to a career in software development, projects like Travlr Getaways help prove that I’m not just learning theory—I can build real, secure, production-quality applications. I’ll proudly include this project in my professional portfolio moving forward.
+The admin SPA rendered JSON responses dynamically in Angular components.
+
+To improve performance and maintainability, I refactored UI components like trip cards and forms into modular, reusable elements. This reduced redundancy and improved consistency across the admin dashboard. These techniques align with real-world development standards and enhance long-term scalability.
+
+## 🔍 Testing
+The backend API supports multiple HTTP methods: GET, POST, PUT, and DELETE.
+
+I used Postman to test API endpoints and confirm proper responses for each request type.
+
+Testing included edge cases and error handling.
+
+After implementing JWT-based authentication, testing required simulating valid tokens in request headers to access protected routes.
+
+This process deepened my understanding of how token-based authentication works and how APIs enforce security policies across a distributed full stack environment.
+
+## 🎯 Reflection
+This course has been a culmination of everything I’ve learned so far in the Computer Science program. It challenged me to design, build, and secure a full stack application from scratch—something I had never done at this scale before.
+
+From frontend design and backend APIs to authentication and database integration, each part had to work together. I also learned how to debug complex, multi-layered issues across the stack using real-world workflows and tools.
+
+As I transition from a career in emergency medicine to one in tech, this project represents more than just a course requirement—it’s proof that I can build production-ready applications. I’ll proudly include this in my professional portfolio as I move forward into the software development field.
 
 # 🌍 Travlr Getaways - Development Log  
 _A full-stack travel management app built in CS-465 with the MEAN stack_
