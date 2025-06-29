@@ -1,4 +1,3 @@
-# 
 ## 🏛 Architecture
 The Travlr Getaways full stack web application combines both server-side and client-side rendering to deliver a modern, responsive experience.
 
@@ -19,7 +18,6 @@ The admin SPA rendered JSON responses dynamically in Angular components.
 
 To improve performance and maintainability, I refactored UI components like trip cards and forms into modular, reusable elements. This reduced redundancy and improved consistency across the admin dashboard. These techniques align with real-world development standards and enhance long-term scalability.
 
-#
 ## 🔍 Testing
 The backend API supports multiple HTTP methods: GET, POST, PUT, and DELETE.
 
@@ -38,7 +36,7 @@ From frontend design and backend APIs to authentication and database integration
 
 As I transition from a career in emergency medicine to one in tech, this project represents more than just a course requirement—it’s proof that I can build production-ready applications. I’ll proudly include this in my professional portfolio as I move forward into the software development field.
 
-# 🌍 Travlr Getaways - Development Log  
+## 🌍 Travlr Getaways - Development Log  
 _A full-stack travel management app built in CS-465 with the MEAN stack_
 
 ---
