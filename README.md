@@ -19,6 +19,7 @@ The admin SPA rendered JSON responses dynamically in Angular components.
 
 To improve performance and maintainability, I refactored UI components like trip cards and forms into modular, reusable elements. This reduced redundancy and improved consistency across the admin dashboard. These techniques align with real-world development standards and enhance long-term scalability.
 
+#
 ## 🔍 Testing
 The backend API supports multiple HTTP methods: GET, POST, PUT, and DELETE.
 
